@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="chatbot.css">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Web</title>
+</head>
+<body>
+<div class="chatbot-popup">
+<div class="chat-header">
+<div class="header-info">
+<i class="fa-solid fa-robot chatbot-logo"></i>
+<h2 class="logo-text">Chatbot</h2>
+</div>
+<button id="close-chatbot" class="fa-solid fa-arrow-down"></button>
+</div>
+
+<div class="chat-body">
+<div class="message bot-message">
+<i class="fa-solid fa-robot bot-avtar"></i>
+<div class="message-text">
+Hey there 👋 <br> How can I help you today?
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="chat-footer">
+      <form action="#" class="chat-form">
+        <textarea placeholder="Message...." class="message-input" required></textarea>
+        <div class="chat-controls">
+          <button type="button" id="emoji-picker" class="fa-solid fa-face-smile"></button>
+
+          <div class="file-upload-wrapper" id="file-upload-wrapper">
+            <input type="file" accept="image/*" id="file-input" hidden />
+            <img src="#" alt="Preview" style="display: none; width: 40px;" />
+            <button type="button" class="fa-solid fa-paperclip" id="file-upload"></button>
+			<button type="button" class="" id="file-cancel"></button>
+          </div>
+
+          <button type="button" class="fa-solid fa-arrow-up" id="send-message"></button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+<script src="chatbot.js"></script>
+</body>
+</html>
